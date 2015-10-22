@@ -1,0 +1,13 @@
+<template>
+	<h1>cities</h1>
+	<div class="col-xs-12">
+		<ul>
+			<li repeat.for="city of cities">
+				<a href="#/cities/edit/${city.id}">
+					${city.name}
+					<button click.trigger="$parent.delete(city.id)">Delete</button>
+				</a>
+			</li>
+		</ul>
+	</div>
+</template>
