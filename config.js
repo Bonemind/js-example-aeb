@@ -44,6 +44,8 @@ System.config({
     "core-js": "npm:core-js@1.2.2",
     "fetch": "github:github/fetch@0.9.0",
     "font-awesome": "npm:font-awesome@4.4.0",
+    "rest": "github:cujojs/rest@1.3.1",
+    "restful.js": "npm:restful.js@0.9.3",
     "swagger-client": "npm:swagger-client@2.1.6",
     "swagger-client-generator": "npm:swagger-client-generator@0.2.13",
     "text": "github:systemjs/plugin-text@0.0.2",
@@ -226,6 +228,11 @@ System.config({
       "aurelia-path": "github:aurelia/path@0.10.0",
       "aurelia-task-queue": "github:aurelia/task-queue@0.8.0",
       "core-js": "npm:core-js@0.9.18"
+    },
+    "github:cujojs/rest@1.3.1": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0",
+      "when": "npm:when@3.7.3"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -638,6 +645,13 @@ System.config({
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "string_decoder": "npm:string_decoder@0.10.31"
     },
+    "npm:restful.js@0.9.3": {
+      "events": "github:jspm/nodelibs-events@0.1.1",
+      "immutable": "npm:immutable@3.7.5",
+      "object-assign": "npm:object-assign@2.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "qs": "npm:qs@5.2.0"
+    },
     "npm:ripemd160@1.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -712,6 +726,9 @@ System.config({
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:when@3.7.3": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     }
   }
 });

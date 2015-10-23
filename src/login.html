@@ -1,0 +1,20 @@
+<template>
+<div class="container">
+	<div class="row">
+		<h1>Login</h1>
+	</div>
+	<div class="row">
+		<form submit.delegate="login()">
+			<div class="form-group">
+				<label>Email</label>
+				<input class="form-control" type="text" value.bind="email">
+			</div>
+			<div class="form-group">
+				<label>Password</label>
+				<input class="form-control" type="password" value.bind="password">
+			</div>
+			<button type="submit">Login</button>
+		</form>
+	</div>
+</div>
+</template>

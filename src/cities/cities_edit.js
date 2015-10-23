@@ -1,17 +1,19 @@
 import {inject} from 'aurelia-framework';
 import {ApplicationState} from '../application_state';
 import {Router} from 'aurelia-router';
+import {FlashMessages} from '../flash_messages'
 
-@inject(ApplicationState, Router)
+@inject(ApplicationState, Router, FlashMessages)
 export class CitiesEdit {
 	heading = 'Edit city';
 	users = [];
 
-	constructor(appState, router) {
+	constructor(appState, router, flashMessages) {
 		this.router = router;
 		this.name = '';
 		this.appState = appState;
 		this.appState.counter++;
+		this.messages = flashMessages;
 	}
 
 	activate(params) {
@@ -28,7 +30,7 @@ export class CitiesEdit {
 	submit() {
 		return this.appState.client.put(`cities/${this.id}`, { name: this.name }).then(response => {
 			this.router.navigate('/cities');
-			console.log(response);
+			this.messages.addMessage('City updated', 'Updated');
 		});
 	}
 }

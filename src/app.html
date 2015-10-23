@@ -1,10 +1,12 @@
 <template>
-  <require from="nav-bar.html"></require>
-  <require from="bootstrap/css/bootstrap.css"></require>
+<require from="nav-bar.html"></require>
+<require from="flash-messages.html"></require>
+<require from="bootstrap/css/bootstrap.css"></require>
 
-  <nav-bar router.bind="router"></nav-bar>
+<nav-bar router.bind="router" appstate.bind="appstate"></nav-bar>
 
-  <div class="page-host">
-    <router-view></router-view>
-  </div>
+<div class="page-host">
+	<flash-messages messages.bind="messages"></flash-messages>
+	<router-view></router-view>
+</div>
 </template>
