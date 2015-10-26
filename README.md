@@ -7,18 +7,19 @@ This example application shows how to communicate with the aeb api and CRUD citi
 
 ## Basic app flow
 
-Every action has a route associated with it, this means there is a router that knows what to do with #/cities.
-This route knows which module to load, and assumes there is an html file with the same name, so cities.js assumes
-there is a cities.html in the same folder. 
+Every action has a route associated with it, this means there is a router that knows what to do with `#/cities`.
+This route knows which module to load, and assumes there is an html file with the same name, so `cities.js` assumes there is a `cities.html` in the same folder.
 
-After matching the route, the module gets instantiated, then the view gets rendered. If a module defines a this.name, this can be rendered in the view using ${name}. Whenever this.name changes, the view will also update.
+After matching the route, the module gets instantiated, then the view gets rendered. If a module defines a this.name, this can be rendered in the view using `${name}`. Whenever `this.name` changes, the view will also update.
 
 To make those values editable, you can use a form, in that case you can bind this.name in an input element like so:
   ```
   <input class="form-control" type="text" value.bind="name">
   ```
 
-This will update this.name when the text is changed, and vice versa.
+This will update `this.name` when the text is changed, and vice versa.
+
+The main entry point of the app is `app.js`.
 
 ## Running The App
 
