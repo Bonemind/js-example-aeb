@@ -1,7 +1,9 @@
 export class ChildRouter {
   heading = 'Child Router';
 
+  //Implement a router
   configureRouter(config, router) {
+    //This is not a very useful router, but an example that shows how child routers work
     config.map([
       { route: ['', 'welcome'], name: 'welcome',       moduleId: 'welcome',       nav: true, title: 'Welcome' },
       { route: 'users',         name: 'users',         moduleId: 'users',         nav: true, title: 'Github Users' },
