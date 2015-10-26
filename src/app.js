@@ -5,7 +5,7 @@ import {ApplicationState} from './application_state'
 //Index.html defines aurelia-app='main', which tells aurelia to run main.js after bootstrapping
 //main.js configures aurelia to use the standard config and enable default config
 //The default config assumes the main entrypoint of the application is app.js, and so, we end up here
-// Inject the flashmessages and applicationstate classes
+//Inject the flashmessages and applicationstate classes
 @inject(FlashMessages, ApplicationState)
 export class App {
   //Since we inject the classes they get passed to the constructor, in the order defined above
